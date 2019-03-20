@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "config": {
+    "MOCHA_OPTS": "--timeout 60000 --exit --reporter spec --ui qunit tests/*.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir ./dist",
+    "test": "npm run test:lint && npm run test:mocha",
+    "test:mocha": "mocha  --require @babel/register $npm_package_config_MOCHA_OPTS",
+    "test:lint": "eslint src --ext js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +33,7 @@
     "@babel/preset-env": "^7.3.4",
     "@babel/runtime": "^7.3.4",
     "babel-eslint": "^10.0.1",
+    "chai": "^4.2.0",
     "eslint": "^5.15.1",
     "eslint-config-webbylab": "^4.0.0",
     "eslint-plugin-fetch": "0.0.1",
@@ -35,6 +42,7 @@
     "eslint-plugin-no-require-lodash": "^1.1.0",
     "eslint-plugin-prefer-spread": "^1.0.3",
     "eslint-plugin-react": "^7.12.4",
+    "mocha": "^6.0.2",
     "std-mocks": "^1.0.1",
     "winston": "^3.2.1"
   },
