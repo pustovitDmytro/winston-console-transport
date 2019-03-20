@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - "node"
+  - "6"
+before_script:
+  - "npm run build"
+jobs:
+  include:
+    - stage: test
+      script: "npm run test:lint"
+    - stage: test
+      script: "npm run test:mocha"
+notifications:
+  email:
+    recipients: dipustovit@gmail.com
+    on_success: change
+    on_failure: always

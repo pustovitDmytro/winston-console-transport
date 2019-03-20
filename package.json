@@ -1,13 +1,14 @@
 {
   "name": "winston-console-transport",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "config": {
     "MOCHA_OPTS": "--timeout 60000 --exit --reporter spec --ui qunit tests/*.js"
   },
   "scripts": {
-    "build": "babel src --out-dir ./dist",
+    "build": "babel src --out-dir ./lib",
+    "prepare": "npm run build",
     "test": "npm run test:lint && npm run test:mocha",
     "test:mocha": "mocha  --require @babel/register $npm_package_config_MOCHA_OPTS",
     "test:lint": "eslint src --ext js"
