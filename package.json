@@ -1,8 +1,8 @@
 {
   "name": "winston-console-transport",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
-  "main": "./lib/index.js",
+  "main": "./lib",
   "config": {
     "MOCHA_OPTS": "--timeout 60000 --exit --reporter spec --ui qunit tests/*.js"
   },
@@ -44,7 +44,7 @@
     "eslint-plugin-prefer-spread": "^1.0.3",
     "eslint-plugin-react": "^7.12.4",
     "mocha": "^6.0.2",
-    "std-mocks": "^1.0.1",
+    "test-console": "^1.1.0",
     "winston": "^3.2.1"
   },
   "dependencies": {

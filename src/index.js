@@ -2,6 +2,7 @@ import os from 'os';
 import Transport from 'winston-transport';
 import { isLoggable } from './utils/common';
 import { defaultLogger, defaultSanitizer } from './defaults';
+import { MESSAGE, LEVEL } from './constants';
 
 module.exports = class Console extends Transport {
     constructor(options = {}) {
@@ -19,7 +20,8 @@ module.exports = class Console extends Transport {
         setImmediate(() => {
             this.emit('logged', info);
         });
-        const { level, message } = info;
+        const level = info[LEVEL];
+        const message = info[MESSAGE];
 
         isLoggable(this.logger[level]);
         const log = [
