@@ -7,9 +7,11 @@ before_script:
 jobs:
   include:
     - stage: test
-      script: "npm run test:lint"
+      script: "npm run lint"
     - stage: test
-      script: "npm run test:mocha"
+      script: "npm run mocha"
+    - stage: test
+      script: "npm run security"
 notifications:
   email:
     recipients: dipustovit@gmail.com

@@ -9,9 +9,10 @@
   "scripts": {
     "build": "babel src --out-dir ./lib",
     "prepare": "npm run build",
-    "test": "npm run test:lint && npm run test:mocha",
-    "test:mocha": "mocha  --require @babel/register $npm_package_config_MOCHA_OPTS",
-    "test:lint": "eslint src --ext js"
+    "test": "npm run lint && npm run security && npm run mocha",
+    "mocha": "mocha  --require @babel/register $npm_package_config_MOCHA_OPTS",
+    "lint": "eslint src --ext js",
+    "security": "npm audit"
   },
   "repository": {
     "type": "git",
