@@ -9,7 +9,7 @@
 [![License][badge-lic]][github]
 
 ## Motivation
-Winston has it's own console transport, but if you will try to use it in browser, you will find out its inconvenience. You can't aceess native browser console levels (ex. verbose), so it is impossible to filter thouse levels using browser console.
+Winston has it's own console transport, but if you will try to use it in the browser, you will find out its inconvenience. You can't access native browser console levels (ex. verbose), so it is impossible to filter those levels using browser console.
 
 ## Installation
 
