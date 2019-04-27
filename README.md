@@ -1,19 +1,32 @@
 # winston-console-transport
 **winston-console-transport** provides a console transport for [winston](https://github.com/winstonjs/winston) logger.
 
-
 [![Version][badge-vers]][npm]
 [![Dependencies][badge-deps]][npm]
 [![Vulnerabilities][badge-vuln]](https://snyk.io/)
 [![Build Status][badge-tests]][travis]
 [![License][badge-lic]][github]
 
+## Table of Contents
+  - [Motivation](#motivation)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Attributes](#attributes)
+
+
 ## Motivation
 Winston has it's own console transport, but if you will try to use it in the browser, you will find out its inconvenience. You can't access native browser console levels (ex. verbose), so it is impossible to filter those levels using browser console.
 
+## Requirements
+To use library you need to have [node](https://nodejs.org) and [npm](https://www.npmjs.com) installed in your machine:
+
+* node `6.0+`
+* npm `3.0+`
+
 ## Installation
 
-To install library you need to have [node](https://nodejs.org) and [npm](https://www.npmjs.com) run following command
+To install library run following command
 ```
 npm i --save winston-console-transport
 ```
