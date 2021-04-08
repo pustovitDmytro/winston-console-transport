@@ -49,6 +49,8 @@ logger.verbose('VERBOSE TEXT');
 
 ## Attributes
 
+Some attributes can be passed to new ```Console({})```
+
 * **name** - name of a transport (default 'console')
 * **eol** - end of line (default os.EOL)
 * **logger** - custom logger (default console)
