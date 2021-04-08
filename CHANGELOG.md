@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/pustovitDmytro/winston-console-transport/compare/v1.0.0...v1.0.1) (2021-04-08)
+
+
+### Docs
+
+* update badges ([5a5e079](https://github.com/pustovitDmytro/winston-console-transport/commit/5a5e0794cf9a0d71308189e6eec5761139cbdf8e))
+
 # 1.0.0 (2021-04-08)
 
 
