@@ -1,7 +1,7 @@
 {
   "name": "winston-console-transport",
   "version": "0.0.5",
-  "description": "",
+  "description": "provides a console transport for winston logger",
   "main": "./lib",
   "config": {
     "MOCHA_OPTS": "--timeout 60000 --exit --reporter spec --ui qunit tests/*.js"
@@ -9,10 +9,10 @@
   "scripts": {
     "build": "babel src --out-dir ./lib",
     "prepare": "npm run build",
-    "test": "npm run lint && npm run security && npm run mocha",
-    "mocha": "mocha  --require @babel/register $npm_package_config_MOCHA_OPTS",
-    "lint": "eslint src --ext js",
-    "security": "npm audit"
+    "test": "npm run test:lint && npm run test:security && npm run test:mocha",
+    "test:mocha": "mocha  --require @babel/register $npm_package_config_MOCHA_OPTS",
+    "test:lint": "eslint src --ext js",
+    "test:security": "npm audit"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,17 @@
   "bugs": {
     "url": "https://github.com/pustovitDmytro/winston-console-transport/issues"
   },
+  "keywords": [
+    "winston",
+    "console",
+    "transport",
+    "logger",
+    "native",
+    "verbose",
+    "log",
+    "debug",
+    "browser"
+  ],
   "homepage": "https://github.com/pustovitDmytro/winston-console-transport#readme",
   "devDependencies": {
     "@babel/cli": "^7.13.14",
@@ -35,6 +46,7 @@
     "@babel/preset-env": "^7.3.4",
     "@babel/runtime": "^7.3.4",
     "babel-eslint": "^10.0.1",
+    "babel-plugin-module-resolver": "^4.1.0",
     "chai": "^4.2.0",
     "eslint": "^5.15.1",
     "eslint-config-webbylab": "^4.0.0",
@@ -44,8 +56,13 @@
     "eslint-plugin-no-require-lodash": "^1.1.0",
     "eslint-plugin-prefer-spread": "^1.0.3",
     "eslint-plugin-react": "^7.12.4",
+    "fs-extra": "^8.1.0",
+    "husky": "^6.0.0",
     "mocha": "^8.3.2",
+    "nyc": "^14.1.1",
+    "semantic-release": "^15.13.19",
     "test-console": "^1.1.0",
+    "uuid": "^3.3.2",
     "winston": "^3.2.1"
   },
   "dependencies": {

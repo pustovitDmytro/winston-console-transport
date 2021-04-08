@@ -1,2 +1,8 @@
 node_modules
-lib
+etc/*.js
+etc/*.json
+lib/*
+coverage/*
+tmp/*
+logs/*
+*.log
