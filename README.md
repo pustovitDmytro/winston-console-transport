@@ -81,13 +81,13 @@ The Tag is one of the following:
 The message summary should be a one-sentence description of the change. The issue number should be mentioned at the end.
 
 
-[npm]: https://www.npmjs.com/package/npm-boilerplate
-[github]: https://github.com/pustovitDmytro/npm-boilerplate
-[travis]: https://travis-ci.org/pustovitDmytro/npm-boilerplate
-[coveralls]: https://coveralls.io/github/pustovitDmytro/npm-boilerplate?branch=master
-[badge-deps]: https://img.shields.io/david/pustovitDmytro/npm-boilerplate.svg
-[badge-tests]: https://img.shields.io/travis/pustovitDmytro/npm-boilerplate.svg
-[badge-vuln]: https://img.shields.io/snyk/vulnerabilities/npm/npm-boilerplate.svg?style=popout
-[badge-vers]: https://img.shields.io/npm/v/npm-boilerplate.svg
-[badge-lic]: https://img.shields.io/github/license/pustovitDmytro/npm-boilerplate.svg
-[badge-coverage]: https://coveralls.io/repos/github/pustovitDmytro/npm-boilerplate/badge.svg?branch=master
+[npm]: https://www.npmjs.com/package/winston-console-transport
+[github]: https://github.com/pustovitDmytro/winston-console-transport
+[travis]: https://travis-ci.org/pustovitDmytro/winston-console-transport
+[coveralls]: https://coveralls.io/github/pustovitDmytro/winston-console-transport?branch=master
+[badge-deps]: https://img.shields.io/david/pustovitDmytro/winston-console-transport.svg
+[badge-tests]: https://img.shields.io/travis/pustovitDmytro/winston-console-transport.svg
+[badge-vuln]: https://img.shields.io/snyk/vulnerabilities/npm/winston-console-transport.svg?style=popout
+[badge-vers]: https://img.shields.io/npm/v/winston-console-transport.svg
+[badge-lic]: https://img.shields.io/github/license/pustovitDmytro/winston-console-transport.svg
+[badge-coverage]: https://coveralls.io/repos/github/pustovitDmytro/winston-console-transport/badge.svg?branch=master
