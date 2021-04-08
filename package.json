@@ -9,8 +9,10 @@
   "scripts": {
     "build": "babel src --out-dir ./lib",
     "prepare": "npm run build",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "test": "npm run test:lint && npm run test:security && npm run test:mocha",
-    "test:mocha": "mocha  --require @babel/register $npm_package_config_MOCHA_OPTS",
+    "test:mocha": "mocha  --config .mocharc.json tests/**/*.js",
+    "test:coverage": "BUILD=0 MODE=test nyc mocha --config .mocharc.json tests/**/*.js",
     "test:lint": "eslint src --ext js",
     "test:security": "npm audit"
   },

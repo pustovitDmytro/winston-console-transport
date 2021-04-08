@@ -1,7 +1,7 @@
 import { createLogger } from 'winston';
-import transport from './transport';
+import transport from '../entry';
 
-import { verifyStdout } from './utils';
+import { verifyStdout } from '../utils';
 
 
 const LEVELS = {

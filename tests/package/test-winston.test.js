@@ -1,7 +1,7 @@
 import { createLogger, format } from 'winston';
 import Transport from 'winston-transport';
 import { assert } from 'chai';
-import transport from './transport';
+import transport from '../entry';
 
 suite('Winston');
 
