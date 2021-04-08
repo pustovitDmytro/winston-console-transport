@@ -4,11 +4,13 @@ import { assert } from 'chai';
 import transport from './transport';
 
 suite('Winston');
+
 test('Positive: check transport', function () {
     const t = new transport();
 
     assert.instanceOf(t, Transport);
 });
+
 test('Positive: createLogger', function () {
     const logger = createLogger({
         level  : 'debug',

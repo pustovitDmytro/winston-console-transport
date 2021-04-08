@@ -11,7 +11,7 @@ module.exports = class Console extends Transport {
         this.eol = options.eol || os.EOL;
         this.logger = options.logger || console;
         this.fallBackLogger = options.fallBackLogger || defaultLogger;
-        this.levels = options.levels || {};
+        this.handlers = options.levels || {};
         this.sanitizer = options.sanitizer || defaultSanitizer;
         this.setMaxListeners(options.maxListeners || 30);
     }
@@ -23,9 +23,9 @@ module.exports = class Console extends Transport {
         const level = info[LEVEL];
         const message = info[MESSAGE];
 
-        isLoggable(this.logger[level]);
         const log = [
-            this.levels[level],
+            this.handlers[level],
+            this.logger[this.handlers[level]],
             this.logger[level],
             this.fallBackLogger
         ].find(isLoggable);

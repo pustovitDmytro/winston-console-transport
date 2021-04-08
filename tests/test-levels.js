@@ -45,3 +45,22 @@ test('Positive: levels filtering', function () {
         verifyStdout(() => logger[level](input), null);
     });
 });
+
+
+test('Positive: levels mapping', function () {
+    const logger = createLogger({
+        levels     : LEVELS,
+        level      : 'debug',
+        transports : [ new transport({
+            levels : {
+                notice : console.error
+            }
+        }) ]
+    });
+
+    verifyStdout(
+        () => logger.log('notice', 'Should be in stderr'),
+        { 'message': 'Should be in stderr' },
+        { stderr: true, json: true }
+    );
+});
