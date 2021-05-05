@@ -1,6 +1,6 @@
 {
   "name": "winston-console-transport",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "provides a console transport for winston logger",
   "main": "./lib",
   "config": {

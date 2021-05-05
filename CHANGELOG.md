@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/pustovitDmytro/winston-console-transport/compare/v1.1.1...v1.1.2) (2021-05-05)
+
+
+### Upgrade
+
+* Update dependency winston-transport to v4.4.0 ([c01ae36](https://github.com/pustovitDmytro/winston-console-transport/commit/c01ae369f0bcbc24cdfc323961019bc575a3d182))
+
 ## [1.1.1](https://github.com/pustovitDmytro/winston-console-transport/compare/v1.1.0...v1.1.1) (2021-05-05)
 
 
