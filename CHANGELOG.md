@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/pustovitDmytro/winston-console-transport/compare/v1.1.0...v1.1.1) (2021-05-05)
+
+
+### Docs
+
+* adds highlight to code ([53965e4](https://github.com/pustovitDmytro/winston-console-transport/commit/53965e499687a0de4ca1ec567268ea38f057bd9f))
+
 # [1.1.0](https://github.com/pustovitDmytro/winston-console-transport/compare/v1.0.1...v1.1.0) (2021-05-05)
 
 
