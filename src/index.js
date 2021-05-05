@@ -1,7 +1,7 @@
 import os from 'os';
 import Transport from 'winston-transport';
 import { isLoggable } from './utils/common';
-import { defaultLogger, defaultSanitizer } from './defaults';
+import { defaultLogger, defaultSanitizer, defaultMaxListeners } from './defaults';
 import { MESSAGE, LEVEL } from './constants';
 
 module.exports = class Console extends Transport {
@@ -13,7 +13,7 @@ module.exports = class Console extends Transport {
         this.fallBackLogger = options.fallBackLogger || defaultLogger;
         this.handlers = options.levels || {};
         this.sanitizer = options.sanitizer || defaultSanitizer;
-        this.setMaxListeners(options.maxListeners || 30);
+        this.setMaxListeners(options.maxListeners || defaultMaxListeners);
     }
 
     log(info, callback) {

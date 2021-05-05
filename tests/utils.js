@@ -10,13 +10,16 @@ export function verifyStdout(functionUnderTest, expected, opts = { json: true, s
 
     if (!expected) {
         return assert.notExists(output);
-    } assert.exists(output);
+    }
+
+    assert.exists(output);
 
     if (opts.json) {
         const { level, ...message } = JSON.parse(output); // eslint-disable-line no-unused-vars
 
         return assert.deepEqual(message, expected);
     }
+
     assert.equal(output, expected);
 }
 
