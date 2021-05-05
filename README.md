@@ -47,7 +47,7 @@ npm i --save winston-console-transport
 ## Usage
 To use new transport, just add it to the transports option of your winston logger.
 
-```
+```javascript
 import { createLogger } from 'winston';
 import Console from 'winston-console-transport';
 
