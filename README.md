@@ -32,10 +32,14 @@ provides a console transport for [winston][w-gh] logger.
 Winston has its own console transport. But if you'll try to use it in the browser, you will find out its inconvenience. You can't access native [browser console][console] levels (ex. verbose), so it is impossible to filter those levels using the browser console.
 
 ## Requirements
+[![Platform Status][appveyor-badge]][appveyor-url]
+
 To use library you need to have [node](https://nodejs.org) and [npm](https://www.npmjs.com) installed in your machine:
 
-* node `6.0+`
-* npm `3.0+`
+* node `>=10`
+* npm `>=6`
+
+Package is [continuously tested][appveyor-url] on darwin, linux, win32 platforms. All active and maintenance [LTS](https://nodejs.org/en/about/releases/) node releases are supported.
 
 ## Installation
 
@@ -76,25 +80,7 @@ Some attributes can be passed to new ```Console({})```
 [w-gh]: https://github.com/winstonjs/winston
 ## Contribute
 
-Make the changes to the code and tests. Then commit to your branch. Be sure to follow the commit message conventions.
-
-Commit message summaries must follow this basic format:
-```
-  Tag: Message (fixes #1234)
-```
-
-The Tag is one of the following:
-* **Fix** - for a bug fix.
-* **Update** - for a backwards-compatible enhancement.
-* **Breaking** - for a backwards-incompatible enhancement.
-* **Docs** - changes to documentation only.
-* **Build** - changes to build process only.
-* **New** - implemented a new feature.
-* **Upgrade** - for a dependency upgrade.
-* **Chore** - for tests, refactor, style, etc.
-
-The message summary should be a one-sentence description of the change. The issue number should be mentioned at the end.
-
+Make the changes to the code and tests. Then commit to your branch. Be sure to follow the commit message conventions. Read [Contributing Guidelines](.github/CONTRIBUTING.md) for details.
 
 [npm]: https://www.npmjs.com/package/winston-console-transport
 [github]: https://github.com/pustovitDmytro/winston-console-transport
@@ -132,3 +118,8 @@ The message summary should be a one-sentence description of the change. The issu
 [npm-downloads-badge]: https://img.shields.io/npm/dw/winston-console-transport
 [npm-size-badge]: https://img.shields.io/bundlephobia/min/winston-console-transport
 [npm-size-url]: https://bundlephobia.com/result?p=winston-console-transport
+
+[appveyor-badge]: https://ci.appveyor.com/api/projects/status/1d7vy60kq4fpc3bx/branch/master?svg=true
+[appveyor-url]: https://ci.appveyor.com/project/pustovitDmytro/winston-console-transport/branch/master
+
+
