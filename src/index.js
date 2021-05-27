@@ -1,10 +1,11 @@
+/* eslint-disable promise/prefer-await-to-callbacks */
 import os from 'os';
 import Transport from 'winston-transport';
 import { isLoggable } from './utils/common';
 import { defaultLogger, defaultSanitizer, defaultMaxListeners } from './defaults';
 import { MESSAGE, LEVEL } from './constants';
 
-module.exports = class Console extends Transport {
+export default class Console extends Transport {
     constructor(options = {}) {
         super(options);
         this.name = options.name || 'console';
@@ -28,9 +29,9 @@ module.exports = class Console extends Transport {
             this.logger[this.handlers[level]],
             this.logger[level],
             this.fallBackLogger
-        ].find(isLoggable);
+        ].find((element) => isLoggable(element));
 
         log(this.sanitizer(message));
         callback();
     }
-};
+}
