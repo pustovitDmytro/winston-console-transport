@@ -3,6 +3,7 @@ import { stdout, stderr } from 'test-console';
 import { assert } from 'chai';
 import { entry } from './constants';
 
+// eslint-disable-next-line unicorn/no-object-as-default-parameter
 export function verifyStdout(functionUnderTest, expected, opts = { json: true, stderr: false }) {
     const inspect = opts.stderr ? stderr.inspect() : stdout.inspect();
 
