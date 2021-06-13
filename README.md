@@ -18,6 +18,7 @@ provides a console transport for [winston][w-gh] logger.
 [![Coverage Status][badge-coverage]][url-coverage]
 
 [![Commit activity][commit-activity-badge]][github]
+[![FOSSA][fossa-badge]][fossa-url]
 [![License][badge-lic]][github]
 
 ## Table of Contents
@@ -122,4 +123,5 @@ Make the changes to the code and tests. Then commit to your branch. Be sure to f
 [appveyor-badge]: https://ci.appveyor.com/api/projects/status/1d7vy60kq4fpc3bx/branch/master?svg=true
 [appveyor-url]: https://ci.appveyor.com/project/pustovitDmytro/winston-console-transport/branch/master
 
-
+[fossa-badge]: https://app.fossa.com/api/projects/custom%2B24828%2Fwinston-console-transport.svg?type=shield
+[fossa-url]: https://app.fossa.com/projects/custom%2B24828%2Fwinston-console-transport?ref=badge_shield
