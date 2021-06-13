@@ -69,6 +69,7 @@
     "@semantic-release/npm": "^7.1.1",
     "@semantic-release/release-notes-generator": "^9.0.2",
     "babel-eslint": "^10.0.1",
+    "babel-plugin-add-module-exports": "^1.0.4",
     "babel-plugin-module-resolver": "^4.1.0",
     "chai": "^4.2.0",
     "chance": "^1.0.18",

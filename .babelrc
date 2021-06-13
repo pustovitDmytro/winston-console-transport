@@ -10,6 +10,11 @@
       ]
     ],
     "plugins": [
+      [ 
+        "add-module-exports", {
+          "addDefaultProperty": true
+        } 
+      ],
       [
         "@babel/plugin-proposal-decorators",
         {
