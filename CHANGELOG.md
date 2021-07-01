@@ -1,3 +1,20 @@
+## [1.1.6](https://github.com/pustovitDmytro/winston-console-transport/compare/v1.1.5...v1.1.6) (2021-07-01)
+
+
+### Chore
+
+* adds sonarcloud config ([c92973d](https://github.com/pustovitDmytro/winston-console-transport/commit/c92973d998ecee059594fbcdd35b9be0c08ffd0b))
+* fix json in renovate ([8ad7928](https://github.com/pustovitDmytro/winston-console-transport/commit/8ad792825b2703e3159b65faf722eb43a1d9d421))
+* Lock file maintenance ([cdf4f11](https://github.com/pustovitDmytro/winston-console-transport/commit/cdf4f112eebab895c624210cc672ab00ba2fa443))
+* removes unused devDependencies ([ddb100a](https://github.com/pustovitDmytro/winston-console-transport/commit/ddb100aa634ab2e1d2695de73d9aeb4a7795ccce))
+* Update dependency eslint-plugin-regexp to ^0.12.0 ([51ff304](https://github.com/pustovitDmytro/winston-console-transport/commit/51ff3049b892e9ee5655761e53454e4c601fba27))
+* Update dependency eslint-plugin-regexp to ^0.12.0 (#15) ([84ec821](https://github.com/pustovitDmytro/winston-console-transport/commit/84ec8216e48d42ee3a7e2db914213eb246a1e0bc)), closes [#15](https://github.com/pustovitDmytro/winston-console-transport/issues/15)
+* Update dependency test-console to v2 ([e67f0fe](https://github.com/pustovitDmytro/winston-console-transport/commit/e67f0fe8641cc7aa56388f98c5631038e7f4430d))
+
+### Docs
+
+* update snyk badge ([a7fbb1d](https://github.com/pustovitDmytro/winston-console-transport/commit/a7fbb1d0e408bec8b8a8f37d1ffef3921d1dc106))
+
 ## [1.1.5](https://github.com/pustovitDmytro/winston-console-transport/compare/v1.1.4...v1.1.5) (2021-06-13)
 
 
