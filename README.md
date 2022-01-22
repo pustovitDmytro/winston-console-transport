@@ -33,14 +33,14 @@ provides a console transport for [winston][w-gh] logger.
 Winston has its own console transport. But if you'll try to use it in the browser, you will find out its inconvenience. You can't access native [browser console][console] levels (ex. verbose), so it is impossible to filter those levels using the browser console.
 
 ## Requirements
-[![Platform Status][appveyor-badge]][appveyor-url]
+[![Platform Status][node-ver-test-badge]][node-ver-test-url]
 
 To use library you need to have [node](https://nodejs.org) and [npm](https://www.npmjs.com) installed in your machine:
 
 * node `>=10`
 * npm `>=6`
 
-Package is [continuously tested][appveyor-url] on darwin, linux, win32 platforms. All active and maintenance [LTS](https://nodejs.org/en/about/releases/) node releases are supported.
+Package is [continuously tested][node-ver-test-url] on darwin, linux and win32 platforms. All active and maintenance [LTS](https://nodejs.org/en/about/releases/) node releases are supported.
 
 ## Installation
 
@@ -86,7 +86,7 @@ Make the changes to the code and tests. Then commit to your branch. Be sure to f
 [npm]: https://www.npmjs.com/package/winston-console-transport
 [github]: https://github.com/pustovitDmytro/winston-console-transport
 [coveralls]: https://coveralls.io/github/pustovitDmytro/winston-console-transport?branch=master
-[badge-deps]: https://img.shields.io/david/pustovitDmytro/winston-console-transport.svg
+[badge-deps]: https://img.shields.io/librariesio/release/npm/winston-console-transport.svg
 [badge-vers]: https://img.shields.io/npm/v/winston-console-transport.svg
 [badge-lic]: https://img.shields.io/github/license/pustovitDmytro/winston-console-transport.svg
 [badge-coverage]: https://coveralls.io/repos/github/pustovitDmytro/winston-console-transport/badge.svg?branch=master
@@ -122,8 +122,8 @@ Make the changes to the code and tests. Then commit to your branch. Be sure to f
 [npm-size-badge]: https://img.shields.io/bundlephobia/min/winston-console-transport
 [npm-size-url]: https://bundlephobia.com/result?p=winston-console-transport
 
-[appveyor-badge]: https://ci.appveyor.com/api/projects/status/1d7vy60kq4fpc3bx/branch/master?svg=true
-[appveyor-url]: https://ci.appveyor.com/project/pustovitDmytro/winston-console-transport/branch/master
+[node-ver-test-badge]: https://github.com/pustovitDmytro/winston-console-transport/actions/workflows/npt.yml/badge.svg?branch=master
+[node-ver-test-url]: https://github.com/pustovitDmytro/winston-console-transport/actions?query=workflow%3A%22Node.js+versions%22
 
 [fossa-badge]: https://app.fossa.com/api/projects/custom%2B24828%2Fwinston-console-transport.svg?type=shield
 [fossa-url]: https://app.fossa.com/projects/custom%2B24828%2Fwinston-console-transport?ref=badge_shield
