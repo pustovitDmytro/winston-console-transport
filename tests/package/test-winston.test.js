@@ -1,5 +1,4 @@
 import { createLogger, format } from 'winston';
-import Transport from 'winston-transport';
 import { assert } from 'chai';
 import transport from '../entry';
 
@@ -8,7 +7,7 @@ suite('Winston');
 test('Positive: check transport', function () {
     const t = new transport();
 
-    assert.instanceOf(t, Transport);
+    assert.isFunction(t.log);
 });
 
 test('Positive: createLogger', function () {
