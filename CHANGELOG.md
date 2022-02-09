@@ -1,3 +1,20 @@
+## [1.1.8](https://github.com/pustovitDmytro/winston-console-transport/compare/v1.1.7...v1.1.8) (2022-02-09)
+
+
+### Chore
+
+* fixes package test for node16 ([60a7613](https://github.com/pustovitDmytro/winston-console-transport/commit/60a76132eea521a6abc4dfe2da78312cc7aa8da8))
+* fixes some npm audit vulnerabilities (#52) ([50a66d1](https://github.com/pustovitDmytro/winston-console-transport/commit/50a66d13767ef3f53d5bb84dfe4e39542499b2d7)), closes [#52](https://github.com/pustovitDmytro/winston-console-transport/issues/52)
+* Lock file maintenance (#49) ([44540ce](https://github.com/pustovitDmytro/winston-console-transport/commit/44540ce93372cfcf1e6daa81eab90937f21654f0)), closes [#49](https://github.com/pustovitDmytro/winston-console-transport/issues/49)
+* Lock file maintenance (#55) ([63483b7](https://github.com/pustovitDmytro/winston-console-transport/commit/63483b7ee1c3044e299b2b961481b6887fbd6497)), closes [#55](https://github.com/pustovitDmytro/winston-console-transport/issues/55)
+* Update dependency nanoid to 3.1.31 [SECURITY] (#48) ([f998351](https://github.com/pustovitDmytro/winston-console-transport/commit/f99835158f5f3e0f6ef55850ceccbc9b54616d7f)), closes [#48](https://github.com/pustovitDmytro/winston-console-transport/issues/48)
+* Update dependency node-fetch to 2.6.7 [SECURITY] (#51) ([ae1f136](https://github.com/pustovitDmytro/winston-console-transport/commit/ae1f1362ac4712a96dbe32e63e448c8080f6f99a)), closes [#51](https://github.com/pustovitDmytro/winston-console-transport/issues/51)
+* Update dependency parse-link-header to 2.0.0 [SECURITY] (#44) ([d8834c3](https://github.com/pustovitDmytro/winston-console-transport/commit/d8834c35decf65d661c95e5a65e8e4a238ba48cd)), closes [#44](https://github.com/pustovitDmytro/winston-console-transport/issues/44)
+
+### Upgrade
+
+* Update dependency winston-transport to v4.5.0 (#56) ([8f4b34e](https://github.com/pustovitDmytro/winston-console-transport/commit/8f4b34e70bc8027a42cdf31c0b6cf26caf93ef9f)), closes [#56](https://github.com/pustovitDmytro/winston-console-transport/issues/56)
+
 ## [1.1.7](https://github.com/pustovitDmytro/winston-console-transport/compare/v1.1.6...v1.1.7) (2022-01-23)
 
 
