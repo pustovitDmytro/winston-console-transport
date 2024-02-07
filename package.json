@@ -96,6 +96,6 @@
     "winston": "^3.11.0"
   },
   "dependencies": {
-    "winston-transport": "4.5.0"
+    "winston-transport": "4.7.0"
   }
 }
